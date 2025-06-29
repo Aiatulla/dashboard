@@ -1,7 +1,7 @@
 import Link from "next/link";
 import Image from 'next/image';
-import Menu from "@/components/menu";
 import NavBar from "@/components/nav-bar";
+import Menu from "@/components/Menu";
 
 export default function DashboardLayout({
     children,
