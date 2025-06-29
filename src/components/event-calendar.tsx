@@ -32,7 +32,7 @@ type Value = ValuePiece | [ValuePiece, ValuePiece];
 const EventCalendar = () => {
   const [value, onChange] = useState<Value>(new Date());
   return (
-    <div className="w-full rounded-md bg-white p-4">
+    <div className=" rounded-md bg-white p-4">
       <Calendar onChange={onChange} value={value} />
       <div className="flex items-center justify-between">
         <h1 className="font-semibold text-lg py-4">Events</h1>
