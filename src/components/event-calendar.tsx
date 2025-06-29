@@ -1,4 +1,5 @@
 "use client";
+
 import { useState } from "react";
 import Calendar from "react-calendar";
 import "react-calendar/dist/Calendar.css";
@@ -33,7 +34,7 @@ const EventCalendar = () => {
   const [value, onChange] = useState<Value>(new Date());
   return (
     <div className=" rounded-md bg-white p-4">
-      <Calendar onChange={onChange} value={value} />
+      <Calendar onChange={onChange} value={value} locale="en-US" />
       <div className="flex items-center justify-between">
         <h1 className="font-semibold text-lg py-4">Events</h1>
         <Image src="/moreDark.png" alt="" width={20} height={20} />
